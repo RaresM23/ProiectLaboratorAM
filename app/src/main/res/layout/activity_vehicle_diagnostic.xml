@@ -1,57 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VehicleDiagnosticActivity">
 
-    <TextView
-        android:id="@+id/problemsTxt"
-        android:layout_width="500dp"
-        android:layout_height="400dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="5dp" />
-
     <Button
         android:id="@+id/engineBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Engine Problems" />
-
+        android:text="Engine Problems"
+        app:layout_constraintBottom_toTopOf="@+id/tiresBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/tiresBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="257dp"
-        android:layout_marginBottom="593dp"
-        android:text="Tires Problems" />
+        android:text="Tires Problems"
+        app:layout_constraintBottom_toTopOf="@+id/directionBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/engineBtn" />
 
     <Button
         android:id="@+id/directionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-4dp"
-        android:layout_marginBottom="678dp"
-        android:text="Direction Problems" />
-
+        android:text="Direction Problems"
+        app:layout_constraintBottom_toTopOf="@+id/exhaustBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/tiresBtn" />
 
     <Button
         android:id="@+id/exhaustBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="590dp"
-        android:text="Exhaust Problems" />
+        android:text="Exhaust Problems"
+        app:layout_constraintBottom_toTopOf="@+id/problemsTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/directionBtn" />
 
+    <TextView
+        android:id="@+id/problemsTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exhaustBtn" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

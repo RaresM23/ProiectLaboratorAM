@@ -14,6 +14,7 @@
         android:layout_height="100dp"
         android:text="Show Coordinates"
         android:textSize="20sp"
+        android:backgroundTint="@color/gray"
         android:layout_marginBottom="100dp" />
 
     <Button
@@ -22,6 +23,7 @@
         android:layout_height="100dp"
         android:text="SOS"
         android:textSize="30sp"
+        android:backgroundTint="@color/red"
         android:layout_marginBottom="16dp" />
 
 </LinearLayout>

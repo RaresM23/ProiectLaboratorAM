@@ -16,21 +16,27 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="GPS Pin Point"
-        android:layout_marginBottom="16dp"/>
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/llContactsBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="Live Location For Contacts"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/assistanceBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="Asistance Coordination"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
 
     <Button
@@ -38,28 +44,36 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="Nearby Services"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/vehicleDiagnosticBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
+        android:textColor="@color/black"
         android:text="Vehicle Diagnostic"
-        android:layout_marginBottom="16dp"/>
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/weatherAlertsBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="Weather Alerts"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/emergenciesSuppliesBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:text="Emergency Supplies"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="30dp"/>
 
 
 </LinearLayout>
