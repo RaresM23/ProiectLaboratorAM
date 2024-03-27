@@ -15,7 +15,7 @@
         android:id="@+id/gpsPinPointBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:text="GPS Pin Point"
+        android:text="GPS Location"
         android:backgroundTint="@color/orange"
         android:textColor="@color/black"
         android:layout_marginBottom="30dp"/>
@@ -24,7 +24,7 @@
         android:id="@+id/llContactsBtn"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:text="Live Location For Contacts"
+        android:text="Live location tracking"
         android:textColor="@color/black"
         android:backgroundTint="@color/orange"
         android:layout_marginBottom="30dp"/>
